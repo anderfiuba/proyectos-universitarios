@@ -1,0 +1,14 @@
+services:
+  db_tienda:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: anderson
+      POSTGRES_PASSWORD: Anderson2026
+      POSTGRES_DB: tienda
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - datos-tienda:/var/lib/postgresql
+
+volumes:
+  datos-tienda:
