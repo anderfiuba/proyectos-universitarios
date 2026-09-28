@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:18
+
+    environment:
+      POSTGRES_DB: carta_digital
+      POSTGRES_USER: anderson
+      POSTGRES_PASSWORD: anderson2026
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql
+
+volumes:
+  postgres_data:
