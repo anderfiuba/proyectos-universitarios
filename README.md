@@ -19,8 +19,3 @@ Main concepts practiced:
 - Docker
 - Docker Compose
 - Git and GitHub
-
-Folder:
-
-```text
-inventory_system/
